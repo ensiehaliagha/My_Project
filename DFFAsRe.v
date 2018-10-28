@@ -1,4 +1,4 @@
-module(Q, D, clk, rst);
+module DFF(Q, D, clk, rst);
 	input D, clk, rst;
 	output Q;
 	reg Q;
