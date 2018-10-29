@@ -7,8 +7,8 @@ module SR(sout, out, in, sin, clk, rst);
 	reg [7:0] out;
 	always @(posedge clk)
 		if(rst) begin
-			sout <= 0;
+			sout <= 1;
 		end
 		else
-			{sout,out} <= {in,sin}
+			{sout,out} <= in;
 endmodule
