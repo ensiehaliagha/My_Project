@@ -1,4 +1,4 @@
-module(Q, D, clk, rst);
+module DFF(Q, D, clk, rst);
 	always@(posedge clk)
 		if(rst)
 			Q <= 0;
